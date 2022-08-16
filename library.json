@@ -1,0 +1,33 @@
+{
+    "name": "c-MC6470",
+    "version": "1.0.0",
+    "description": "SW Driver for mCube 6-axis eCompass mc6470, compatible for ARM micro-controller.",
+    "repository": {
+      "type": "git",
+      "url": "git@github.com:jcu-eresearch/c-mc6470.git"
+    },
+    "keywords": [
+      "Sensor"
+    ],
+    "authors": [
+      {
+        "name": "mCube"
+      }
+    ],
+    "frameworks": [
+      "*"
+    ],
+    "dependencies": {
+    },
+    "license": "mCube Software License",
+    "build": {
+      "libArchive": false,
+      "extraScript": "extra_script.py",
+      "includeDir": "MC7XXX_MCU_1.0.0/sensor",
+
+      "srcFilter": [
+        "+<MC7XXX_MCU_1.0.0/sensor/**/*.c>",
+        "+<MC7XXX_MCU_1.0.0/sensor/**/*.h>"
+      ]
+    }
+  }
